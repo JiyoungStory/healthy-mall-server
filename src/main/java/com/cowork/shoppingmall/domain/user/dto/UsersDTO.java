@@ -3,7 +3,7 @@ package com.cowork.shoppingmall.domain.user.dto;
 import lombok.Getter;
 
 @Getter
-public class Users {
+public class UsersDTO {
 
     private String userId;
     private String userName;
@@ -104,4 +104,5 @@ public class Users {
     public void setCreatedDate(String createdDate) {
         this.createdDate = createdDate;
     }
+
 }
