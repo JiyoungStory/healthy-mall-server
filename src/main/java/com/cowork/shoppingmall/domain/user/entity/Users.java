@@ -16,7 +16,6 @@ import javax.persistence.*;
 public class Users {
 
     @Id
-    @Column(name = "user_id")
     private String userId;
     private String userPw;
     private String userName;
