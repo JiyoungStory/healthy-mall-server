@@ -1,8 +1,10 @@
 package com.cowork.shoppingmall.domain.user.dto;
 
 import lombok.Getter;
+import javax.persistence.*;
 
 @Getter
+@Table(name = "USERS")
 public class UsersDTO {
 
     private String userId;

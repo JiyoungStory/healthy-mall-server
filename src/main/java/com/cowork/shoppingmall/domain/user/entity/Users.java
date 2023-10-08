@@ -5,17 +5,18 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data            // Getter Setter
 @Builder        // DTO -> Entity화
 @AllArgsConstructor    // 모든 컬럼 생성자 생성
 @NoArgsConstructor
+@Table(name = "USERS")
 public class Users {
 
     @Id
+    @Column(name = "user_id")
     private String userId;
     private String userPw;
     private String userName;
@@ -24,6 +25,7 @@ public class Users {
     private int userPoint;
     private String userAddr;
     private String userAddrId;
+    @Column(name = "USER_ZIP_CODE")
     private String userZipCode;
     private int userState;
     private String userPhone;

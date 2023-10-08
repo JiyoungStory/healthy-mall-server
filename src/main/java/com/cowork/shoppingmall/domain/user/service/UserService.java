@@ -8,14 +8,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class UserService implements UserServiceImpl{
 
     //생성자 주입
     private final UserRepository userRepository;
 
+    @Override
     public String join(UsersDTO usersDTO){
         Users users = Users.builder().userId(usersDTO.getUserId())
                 .userName(usersDTO.getUserName())
+                .userEmail(usersDTO.getUserEmail())
                 .build();
         return userRepository.save(users).getUserId();
     }
