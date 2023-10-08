@@ -14,10 +14,11 @@ public class UserService implements UserServiceImpl{
     private final UserRepository userRepository;
 
     @Override
-    public String join(UsersDTO usersDTO){
-        Users users = Users.builder().userId(usersDTO.getUserId())
-                .userName(usersDTO.getUserName())
-                .userEmail(usersDTO.getUserEmail())
+    public String join(Users Users){
+        Users users = Users.builder().userId(Users.getUserId())
+                .userPw(Users.getUserPw())
+                .userName(Users.getUserName())
+                .userEmail(Users.getUserEmail())
                 .build();
         return userRepository.save(users).getUserId();
     }

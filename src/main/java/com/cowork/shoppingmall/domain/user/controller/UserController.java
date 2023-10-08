@@ -1,6 +1,7 @@
 package com.cowork.shoppingmall.domain.user.controller;
 
 import com.cowork.shoppingmall.domain.user.dto.UsersDTO;
+import com.cowork.shoppingmall.domain.user.entity.Users;
 import com.cowork.shoppingmall.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -22,8 +23,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "/joinForm")
-    public String createMember(UsersDTO usersDTO) {
-        String memberId = userService.join(usersDTO);
+    public String createMember(Users Users) {
+        String memberId = userService.join(Users);
         return "join";
     }
 }
