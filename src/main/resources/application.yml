@@ -1,0 +1,26 @@
+server:
+  port: 8070
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@project22_high?TNS_ADMIN=/Users/ciel/Documents/Wallet/Wallet_PROJECT22
+    username: ADMIN
+    password: springBoot2023
+
+  jap:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.sql: debug
