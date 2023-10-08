@@ -25,8 +25,7 @@ public class Users {
     private int userPoint;
     private String userAddr;
     private String userAddrId;
-    @Column(name = "USER_ZIP_CODE")
-    private String userZipCode;
+    private String userZipcode;
     private int userState;
     private String userPhone;
     private String createdDate;
