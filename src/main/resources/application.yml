@@ -10,7 +10,7 @@ server:
 spring:
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@project22_high?TNS_ADMIN=/Users/ciel/Documents/Wallet/Wallet_PROJECT22
+    url: jdbc:oracle:thin:@q27jqwfpybpofdes_high?TNS_ADMIN=/Users/ciel/Documents/Wallet/Wallet_Q27JQWFPYBPOFDES
     username: ADMIN
     password: springBoot2023
 
